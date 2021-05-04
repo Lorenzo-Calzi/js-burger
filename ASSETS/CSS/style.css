@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(255, 245, 226, 1);
+}
+.container{
+    width: 60%;
+}
+#site_header{
+    height: 200px;
+    background-color: rgba(253, 187, 64, 1);
+}
+#site_main{
+    height: 450px;
+    background-color: white;
+}
+#site_footer{
+    height: 100px;
+    background-color: rgba(211, 51, 89, 1);
+}
+input{
+    border: none;
+    font-size: 25px;
+}
+
+.burger{
+    display: flex;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.form_group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.form_group img{
+    height: 40px;
+    margin-right: 10px;
+}
