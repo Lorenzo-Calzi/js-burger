@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger</title>
     <link rel="stylesheet" href="./ASSETS/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
 
         <header id="site_header">
-            <h1>Create your burger</h1>
+            <h1 class="title">Create Your Burger</h1>
+            <img src="./img/burger-top.png" alt="">
         </header>
     
         <main id="site_main">
@@ -26,21 +29,21 @@
                         <img src="./img/cheese.svg" alt="">
                         <label for="cheese">Cheese</label>
                         <input type="checkbox" name="cheese" id="cheese" date-price="1">
-                        <label for="add">add</label>
+                        <label for="add" class="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="/img/fried-egg.svg" alt="">
                         <label for="egg">Egg</label>
                         <input type="checkbox" name="egg" id="egg" date-price="2">
-                        <label for="add">add</label>
+                        <label for="add" class="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="./img/mustard.svg" alt="">
                         <label for="mustard">Mustard</label>
                         <input type="checkbox" name="mustard" id="mustard" date-price="0.5">
-                        <label for="add">add</label>
+                        <label for="add" class="add">add</label>
                     </div>
                 </div>
 
@@ -49,21 +52,21 @@
                         <img src="./img/tomato.svg" alt="">
                         <label for="tomato">Tomato</label>
                         <input type="checkbox" name="tomato" id="tomato" date-price="1">
-                        <label for="add">add</label>
+                        <label for="add" class="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="./img/lettuce.svg" alt="">
                         <label for="lettuce">Lettuce</label>
                         <input type="checkbox" name="lettuce" id="lettuce" date-price="1.5">
-                        <label for="add">add</label>
+                        <label for="add" class="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="./img/ketchup.svg" alt="">
                         <label for="ketchup">Ketchup</label>
                         <input type="checkbox" name="ketchup" id="ketchup" date-price="0.5">
-                        <label for="add">add</label>
+                        <label for="add" class="add">add</label>
                     </div>
                 </div>
             </div>
@@ -72,20 +75,18 @@
                 <span>Discount Coupon</span>
                 <input type="text" placeholder="12345ABCDEF" id="coupon">
             </div>
-            <button>Calculate</button>
+            <button>calculate</button>
 
         </main>
     
         <footer id="site_footer">
-            <h3>Your price</h3>
+            <h3>Your Price</h3>
 
             <span id="total_price"></span>
         </footer>
 
     </div>
     
-
-
     <script src="./ASSETS/JS/main.js"></script>
 </body>
 </html>

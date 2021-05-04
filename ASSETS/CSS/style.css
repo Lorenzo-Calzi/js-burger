@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgba(255, 245, 226, 1);
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     width: 60%;
@@ -12,13 +13,15 @@ body{
 #site_header{
     padding: 30px;
     background-color: rgba(253, 187, 64, 1);
+    position: relative;
 }
 #site_main{
     padding: 35px;
     background-color: white;
 }
 #site_footer{
-    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: rgba(211, 51, 89, 1);
 }
 #name_burger{
@@ -29,7 +32,17 @@ body{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+#site_header img{
+    height: 220px;
+    position: absolute;
+    top: -30px;
+    right: -40px;
+}
+.title{
+    font-weight: 800;
+    padding-top: 30px;
+    font-size: 40px;
+}
 .burger{
     display: flex;
 }
@@ -53,15 +66,29 @@ body{
     margin-right: 10px;
 }
 input[type="checkbox"] {
-    margin-right: 10px;    
+    margin-right: 10px;  
+    margin-top: 3px; 
 }
 
+input[type="checkbox"]:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
 button{
-    padding: 10px 20px 10px 20px;
+    padding: 15px 25px 15px 25px;
     border-radius: 5px;
     background-color: rgba(253, 187, 64, 1);
     border: none;
-    font-weight:600 ;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 #coupon{
     border: none;
@@ -70,4 +97,29 @@ button{
     width: 70%;
     padding: 10px;
     margin-left: 10px;
+}
+
+
+/* FOOTER */
+#site_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#site_footer h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+#site_footer span{
+    padding-right: 40px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.add{
+  color: rgba(249, 57, 94, 1);
 }
