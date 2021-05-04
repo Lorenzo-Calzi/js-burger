@@ -10,20 +10,24 @@ body{
     width: 60%;
 }
 #site_header{
-    height: 200px;
+    padding: 30px;
     background-color: rgba(253, 187, 64, 1);
 }
 #site_main{
-    height: 450px;
+    padding: 35px;
     background-color: white;
 }
 #site_footer{
     height: 100px;
     background-color: rgba(211, 51, 89, 1);
 }
-input{
+#name_burger{
     border: none;
     font-size: 25px;
+}
+#site_main h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .burger{
@@ -41,6 +45,29 @@ input{
     margin-bottom: 30px;
 }
 .form_group img{
-    height: 40px;
+    height: 60px;
     margin-right: 10px;
+}
+.form_group label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;    
+}
+
+button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(253, 187, 64, 1);
+    border: none;
+    font-weight:600 ;
+}
+#coupon{
+    border: none;
+    background-color: rgba(255, 245, 226, 1);
+    border-radius: 5px;
+    width: 70%;
+    padding: 10px;
+    margin-left: 10px;
 }

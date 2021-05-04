@@ -16,7 +16,7 @@
         </header>
     
         <main id="site_main">
-            <input type="text" placeholder="Name your Burger">
+            <input type="text" placeholder="Name your Burger" id="name_burger">
             <h3>Ingredients</h3>
 
             <div class="burger">
@@ -25,46 +25,61 @@
                     <div class="form_group">
                         <img src="./img/cheese.svg" alt="">
                         <label for="cheese">Cheese</label>
-                        <input type="checkbox" name="" id="" data-price="">
+                        <input type="checkbox" name="cheese" id="cheese" date-price="1">
+                        <label for="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="/img/fried-egg.svg" alt="">
-                        <label for="cheese">Egg</label>
-                        <input type="checkbox" name="" id="" data-price="">
+                        <label for="egg">Egg</label>
+                        <input type="checkbox" name="egg" id="egg" date-price="2">
+                        <label for="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="./img/mustard.svg" alt="">
-                        <label for="cheese">Mustard</label>
-                        <input type="checkbox" name="" id="" data-price="">
+                        <label for="mustard">Mustard</label>
+                        <input type="checkbox" name="mustard" id="mustard" date-price="0.5">
+                        <label for="add">add</label>
                     </div>
                 </div>
 
                 <div class="right">
                     <div class="form_group">
                         <img src="./img/tomato.svg" alt="">
-                        <label for="cheese">Tomato</label>
-                        <input type="checkbox" name="" id="" data-price="">
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" name="tomato" id="tomato" date-price="1">
+                        <label for="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="./img/lettuce.svg" alt="">
-                        <label for="cheese">Lettuce</label>
-                        <input type="checkbox" name="" id="" data-price="">
+                        <label for="lettuce">Lettuce</label>
+                        <input type="checkbox" name="lettuce" id="lettuce" date-price="1.5">
+                        <label for="add">add</label>
                     </div>
 
                     <div class="form_group">
                         <img src="./img/ketchup.svg" alt="">
-                        <label for="cheese">Ketchup</label>
-                        <input type="checkbox" name="" id="" data-price="">
+                        <label for="ketchup">Ketchup</label>
+                        <input type="checkbox" name="ketchup" id="ketchup" date-price="0.5">
+                        <label for="add">add</label>
                     </div>
                 </div>
             </div>
+
+            <div>
+                <span>Discount Coupon</span>
+                <input type="text" placeholder="12345ABCDEF" id="coupon">
+            </div>
+            <button>Calculate</button>
+
         </main>
     
         <footer id="site_footer">
             <h3>Your price</h3>
+
+            <span id="total_price"></span>
         </footer>
 
     </div>
