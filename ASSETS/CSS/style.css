@@ -8,29 +8,19 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .container{
-    width: 60%;
+    width: 50%;
 }
+
+/* /HEADER */
 #site_header{
     padding: 30px;
     background-color: rgba(253, 187, 64, 1);
     position: relative;
 }
-#site_main{
-    padding: 35px;
-    background-color: white;
-}
-#site_footer{
+.title{
+    font-weight: 800;
     padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: rgba(211, 51, 89, 1);
-}
-#name_burger{
-    border: none;
-    font-size: 25px;
-}
-#site_main h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 40px;
 }
 #site_header img{
     height: 220px;
@@ -38,10 +28,25 @@ body{
     top: -30px;
     right: -40px;
 }
-.title{
-    font-weight: 800;
-    padding-top: 30px;
-    font-size: 40px;
+/* /HEADER */
+
+/* MAIN */
+#site_main{
+    padding: 35px;
+    background-color: white;
+}
+#site_main h3{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 600;
+}
+#name_burger{
+    border: none;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .burger{
     display: flex;
@@ -59,20 +64,64 @@ body{
 }
 .form_group img{
     height: 60px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .form_group label{
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+    font-weight: 600;
 }
+
+/* CHECKBOX */
 input[type="checkbox"] {
     margin-right: 10px;  
     margin-top: 3px; 
 }
-
 input[type="checkbox"]:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+.new-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+.new-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+.new-checkbox + label:before {
+    content: '';
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-left: 23px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius:3px;
+}
+.new-checkbox:hover + label:before {
+    background: #ccc;
+}
+.new-checkbox:checked + label:before {
+    background: rgba(249, 57, 94, 1);
+}
+.new-checkbox:checked + label:after {
+    content: '\f00c';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+    font-size: 27px;
+    color:black;
+    position: absolute;
+    left: 18px;
+    top: -4px;
+}
+/* /CHECKBOX */
+
+.add{
+    color: rgba(249, 57, 94, 1);
 }
 button{
     padding: 15px 25px 15px 25px;
@@ -90,6 +139,11 @@ button:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+.text_coupon{
+    font-size: 17px;
+    font-weight: 600;
+}
 #coupon{
     border: none;
     background-color: rgba(255, 245, 226, 1);
@@ -97,29 +151,36 @@ button:hover{
     width: 70%;
     padding: 10px;
     margin-left: 10px;
+    margin-top: 20px;
+    font-size: 15px;
 }
-
+/* /MAIN */
 
 /* FOOTER */
 #site_footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(211, 51, 89, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
 }
-
 #site_footer h3{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
     font-size: 30px;
 }
-
 #site_footer span{
     padding-right: 40px;
     font-size: 30px;
     font-weight: 700;
 }
-.add{
-  color: rgba(249, 57, 94, 1);
-}
+/* FOOTER */
+
+
+
+
+
+  
