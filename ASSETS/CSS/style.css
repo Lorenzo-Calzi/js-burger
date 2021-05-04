@@ -128,7 +128,7 @@ button{
     border-radius: 5px;
     background-color: rgba(253, 187, 64, 1);
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 800;
     display: flex;
     margin: auto;
@@ -152,7 +152,8 @@ button:hover{
     padding: 10px;
     margin-left: 10px;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 600;
 }
 /* /MAIN */
 
@@ -174,7 +175,7 @@ button:hover{
 }
 #site_footer span{
     padding-right: 40px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
 }
 /* FOOTER */
